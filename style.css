@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;');
+h1,h2,h3,h4,h5,h6,p,a,li,input,label{
+    font-family: font-family 'Josefin Sans', sans-serif;}
+#first-taable{
+    width: 100%;
+    height:50px;
+}
+#background-picture{
+    background-image: url('background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+}
+
+#second-table{
+    width: 100%;
+}
+#right-logo{
+    margin-top: 15px;  
+}
+#kindle{
+    text-align: left;
+    font-size: 80px;
+    margin-top: 120px;
+}
+
+
+#water-dancer{
+    border-radius: 9px;
+    height: 180px;
+    width: 120px;
+    
+}
+#first-table{
+    height: 220px;
+    width: 35%;
+}
+#link-table{
+    width: 1000px;
+    height: 25px;
+}
+#game-of-thrones{
+    border-radius: 9px;  
+    height: 180px;  
+    width: 120px;
+}
+#h4{
+    text-align: left;
+
+}
+#harry-potter{
+    border-radius: 9px;
+    height: 180px;
+    width: 120px;
+}
+#first-pic{
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(circle,rgb(248, 124, 8),rgb(68, 6, 6));
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px 30px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    position: relative;
+    width: 325px;
+    float: right;
+
+}
+#second-pic{
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(circle,rgb(34, 34, 77),rgb(10, 10, 51));
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px 30px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    position: relative;
+    width: 325px;
+    float: right;
+    
+}
+#third-pic{
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(circle,rgb(53, 53, 59),rgb(13, 13, 14));
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px 30px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    position: relative;
+    width: 150px;
+    float: right;
+    
+}
+
+#h5{
+    text-align: left;
+}
+
+#container{
+    outline: rgb(12, 12, 12) solid 3px;
+    margin-bottom: 75px;
+    margin: 80px;
+    padding: 175px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: beige;
+    
+ 
+}
+#middle{
+    float: right;
+    padding: 10%;
+    
+}
+#longing{
+    float: left;
+    border-radius: 9px;
+    width: 120px;
+    margin-right: 35px;
+    height: 180px;
+   
+    
+}
+#glass-hotel{
+    float: left;
+    border-radius: 9px;
+    width: 120px; 
+    margin-right: 35px;
+    height: 180px;
+}
+
+#rose-gold{
+    float: left;
+    border-radius: 9px;
+    width: 120px;
+    padding: auto;
+    margin-right: 35px;
+    height: 180px;
+    
+}
+#dark-vanessa{
+    float: left;
+    border-radius: 9px;
+    width: 120px;
+    padding: auto;
+    margin-right: 35px;
+    height: 180px;
+   
+}
+#weather{
+    float: left;
+    border-radius: 9px;
+    width: 120px;
+    padding: auto;
+    margin-right: 35px;
+    height: 180px;
+}
+.bottom-right{
+    position: relative;
+}
+.text-block{
+    position: absolute;
+    bottom: 1px;
+    left: 710px;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+    padding-bottom: 20px;
+    margin-left: 100px;
+}
+#rowling{
+    border-radius: 30px;
+
+}
+#name{
+    float: right;  
+    text-align: left;
+}
+#king{
+    border-radius: 30px;
+}
+#stephen-text{
+    float: right;
+    text-align: left;
+}
+#steel{
+   border-radius: 150px; 
+}
+#steel-text{
+    float: right;
+    text-align: left;
+}
+#heading{
+    text-align: right;
+}
+
+#search{
+    width: 60%;
+    padding: 15px;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background:rgb(206, 206, 195);
+    border-color:transparent;
+    outline: none;
+    line-height: 1;
+    flex-grow: 2;
+    float: right;
+}
+/* #button{
+    width: 60px;
+    float: right;
+    background-color: goldenrod;
+    border-radius: 0 5px 5px 0;
+    position:static;
+    padding: 7px;
+    font-size: 12px;   
+} */
+#new{
+    text-decoration: none;
+    color: black;
+}
+#featured{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-weight: 70px;
+}
+#bottom-logo{
+    position: absolute;
+    left:20px;
+    background-color:transparent;
+    color:black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+    padding-bottom: 10px;
+    margin-left: 90px;
+    margin-top: 70px;
+    
+}
+#bottom{
+    width: 100px;
+    height: 70px; 
+}
+#top-text-block{
+    position: absolute;
+    top: 500px;
+    left:20px;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 16px;
+    margin-left: 70px;
+    margin-top: 55px;
+    padding-top: 50px;  
+}
+#misery{
+    background-color: rgb(206, 206, 195);
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+    
+}
+#sue-monk{
+    background-color: rgb(206, 206, 195);
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+    
+}
+#steph{
+    background-color:rgb(206, 206, 195);
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+
+}
+#dark{
+    background-color: rgb(206, 206, 195);
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+}
+#jenny{
+    background-color: rgb(206, 206, 195);
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+     
+}
+#hotel-id{
+   text-align: left;
+}
+#longing-id{
+    text-align: left;
+}
+#darling-id{
+    text-align: left;
+}
+#dark-id{
+    text-align: left;
+}
+#waether-id{
+    text-align: left;
+}
+.left{
+    text-align: left;
+}
+#kindle-board{
+    position: absolute;
+    top: 220px;
+    left:20px;
+    background-color:transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+    margin-left: 5px;
+    margin-top: 55px;
+    padding-top: 50px; 
+}
+.resize {
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
+}
+.texts{
+    margin-top: 60px;
+}
+.harry-table{
+    width: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.table-text{
+    color: aliceblue;
+}
+.small-text{
+    color: aliceblue;
+}

@@ -99,7 +99,13 @@
                             <table border="0">
                                 <tr><td><img src="Adaora-Akubilo.jpg" alt="Adaora" width="60px" height="65px" style="border-radius: 20px;"></td></tr>
                                 <tr><td><h5>Welcome <br>Back</h5></td></tr>
-                                <tr><td><h4>Sarah</h4></td></tr>
+                                <tr><td>
+                                    <h4><span id="username"></span></h4>
+                                    <script>
+                                        document.getElementById('username').innerHTML = localStorage.('name');
+                                    </script>
+                                    </td>
+                                </tr>
                             </table>
                           
                             <div id="kindle-board">

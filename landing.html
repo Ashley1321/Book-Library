@@ -100,8 +100,10 @@
                                 <tr><td><img src="Adaora-Akubilo.jpg" alt="Adaora" width="60px" height="65px" style="border-radius: 20px;"></td></tr>
                                 <tr><td><h5>Welcome <br>Back</h5></td></tr>
                                 <tr><td>
-                                    <h4><span id="username">Sarah</span></h4>
-                                  
+                                    <h4><span id="username"></span></h4>
+                                       <script>
+                                        document.getElementById('username').innerHTML = localStorage.getItem('name');
+                                    </script>
                                     </td>
                                 </tr>
                             </table>

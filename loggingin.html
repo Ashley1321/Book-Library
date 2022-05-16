@@ -35,9 +35,12 @@
             //store the data from LogIn page to index page
             var email= localStorage.getItem('email');
             var password=localStorage.getItem('password');
+           
             //data from the first page
             var signInID=document.getElementById('signInID');
             var Password=document.getElementById('Password');
+             localStorage.setItem('name',SignInID);
+            return false;
             //validate if the data is equivalent to each other
             // if(signInID.value == !email || password.value!== Password) 
             if(signInID.value ==!email || Password.value !== password){

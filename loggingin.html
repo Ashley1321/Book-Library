@@ -8,7 +8,7 @@
 
     <a id="firstpage" href="landing.html"></a>
     <a id="secondpage" href="index.html"></a>
-    <form method="post" name="login">
+    <form method="post" name="login" action=landing.html>
     <table border="0">
         <tr>
             <td align="center">
@@ -39,7 +39,8 @@
             //data from the first page
             var signInID=document.getElementById('signInID');
             var Password=document.getElementById('Password');
-             
+             localStorage.setItem('name',signInID);
+            return false;
             //validate if the data is equivalent to each other
             // if(signInID.value == !email || password.value!== Password) 
             if(signInID.value ==!email || Password.value !== password){

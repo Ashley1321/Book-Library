@@ -219,15 +219,10 @@ h1,h2,h3,h4,h5,h6,p,a,li,input,label{
     flex-grow: 2;
     float: right;
 }
-/* #button{
-    width: 60px;
+#move-right{
+    width: 50px;
     float: right;
-    background-color: goldenrod;
-    border-radius: 0 5px 5px 0;
-    position:static;
-    padding: 7px;
-    font-size: 12px;   
-} */
+}
 #new{
     text-decoration: none;
     color: black;

@@ -202,12 +202,17 @@ h1,h2,h3,h4,h5,h6,p,a,li,input,label{
 }
 
 #search{
-    width: 60%;
+      width: 60%;
     padding: 15px;
     margin: 15px;
     box-sizing: border-box;
     border-radius: 100px;
-    background:rgb(206, 206, 195);
+    background:white;
+    background-image: url('icons8-search.gif');
+    background-size: 35px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 12px;
     border-color:transparent;
     outline: none;
     line-height: 1;

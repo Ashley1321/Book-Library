@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="registation-form">
+        <meta charset="UTF-8">
+        <title>registration form</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <div id="wrapper">
+        
+        <div class="container">
+           
+            <span class="heading"><h1>Amazon</h1></span><br>
+            
+            <form id="SignUp">
+                <span class="heading">Sign Up</span><br>
+            <div class="inputs">
+                <input id="username" type="text" placeholder="Username..." required>
+                <span class="bar"></span>
+            </div>
+            <div class="inputs">
+                <input id="email" type="email"  placeholder="Email" required>
+                <span class="bar"></span>
+            </div>
+            <div class="inputs">
+                <input id="password" type="password" placeholder="Password..."  required>
+                <span class="bar"></span>
+            </div>
+            <div class="inputs">
+                <input type="file" id="file" required >
+                <span class="bar"></span>
+            </div><br>
+            <div class="inputs">
+                <button id="submit" onclick="MyClickFunction()" type="submit">Register</button>
+
+                
+            </div>
+            <div class="Switch to Log In"><br>
+                
+                <a id="link" href="SignIn.html">Sign In</a>
+            </div>
+        </div> 
+  
+    <script>
+       
+var username=document.getElementById('username');
+var email=document.getElementById('email');
+var password=document.getElementById('password');
+var file=document.getElementById('file');
+var RegisterData=JSON.parse(localStorage.getItem('RegisterInfo'));
+
+// create a function to display
+function MyClickFunction()
+{
+    var username=document.getElementById('username').value.trim()
+    var email=document.getElementById('email').value.trim()
+    var password=document.getElementById('password').value.trim()
+    var file=document.getElementById('file').value.trim()
+    
+
+    if (!username || !email || !password || !file){
+        return;
+    }
+
+// to save in the local storage
+var RegisterData={
+    username:username,
+    email:email,
+    password:password,
+    file:file,
+};
+localStorage.setItem('RegisterInfo',JSON.stringify(RegisterData));
+document.write(username+""+password+""+file);
+window.location.href="SignIn.html";
+}
+    </script>
+</html>

@@ -135,6 +135,16 @@ form{
     position: absolute;
     left: 10rem;
 }
+label > img{
+    width: 130px;
+    height: 130px;
+    border-radius: 70px;
+    margin-top: 70px;
+    margin-left: 115px;
+}
+.hidden{
+    display: none;
+}
 
 
  

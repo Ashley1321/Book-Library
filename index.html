@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>registration form</title>
         <link rel="stylesheet" href="main.css">
+        <!-- <script src="signIn.js" defer></script> -->
     </head>
 <body>
     <div id="wrapper">
@@ -15,40 +16,55 @@
             
             <form id="SignUp">
                 <span class="heading">Sign Up</span><br>
+
+
+                <label for="proPic">
+                    <img src="user.jpg" id="img">
+                    <span class="bar">Select a profile picture</span>
+                </label>
+                <div class="inputs">
+                    <input type="file" class="hidden" id="proPic" onchange="handleImage(event);" >
+</div><br>
+                
+
             <div class="inputs">
-                <input id="username" type="text" placeholder="Username..." required>
+                <input id="username" type="text" placeholder="Username..."  required>
                 <span class="bar"></span>
             </div>
+
+
             <div class="inputs">
                 <input id="email" type="email"  placeholder="Email" required>
                 <span class="bar"></span>
             </div>
+
+
             <div class="inputs">
                 <input id="password" type="password" placeholder="Password..."  required>
                 <span class="bar"></span>
             </div>
-            <div class="inputs">
-                <input type="file" id="file" required >
-                <span class="bar"></span>
-            </div><br>
-            <div class="inputs">
-                <button id="submit" onclick="MyClickFunction()" type="submit">Register</button>
 
-                
+
+            
+            <div class="inputs">
+                <button id="submit" onclick="MyClickFunction()" type="submit">Register</button> 
             </div>
+
+
             <div class="Switch to Log In"><br>
-                
                 <a id="link" href="SignIn.html">Sign In</a>
             </div>
         </div> 
+
   
     <script>
+         const SignUp = document. getElementById('submit')
        
 var username=document.getElementById('username');
 var email=document.getElementById('email');
 var password=document.getElementById('password');
-var file=document.getElementById('file');
 var RegisterData=JSON.parse(localStorage.getItem('RegisterInfo'));
+
 
 // create a function to display
 function MyClickFunction()
@@ -56,12 +72,29 @@ function MyClickFunction()
     var username=document.getElementById('username').value.trim()
     var email=document.getElementById('email').value.trim()
     var password=document.getElementById('password').value.trim()
-    var file=document.getElementById('file').value.trim()
+   
     
 
-    if (!username || !email || !password || !file){
+    if (!username || !email || !password ){
         return;
     }
+    var SigningUp = {
+                Username: document.getElementById('user').value,
+                Email: document.getElementById('email').value,
+                Password: document.getElementById('password').value,
+               
+            };
+            var RegisterAccount =JSON.parse(localStorage.getItem('userDetails')) || [];
+            if (!RegisterAccount.some(user => userDetails.Email === SigningUp.Email)){
+                RegisterAccount.push(SigningUp);
+                localStorage.setItem('userDetails', JSON.stringify(RegisterAccount));
+                location.reload()
+                console.log(SigningUp)
+            }
+            else{
+                alert('Email already exists!')
+            }
+      
 
 // to save in the local storage
 var RegisterData={
@@ -73,6 +106,45 @@ var RegisterData={
 localStorage.setItem('RegisterInfo',JSON.stringify(RegisterData));
 document.write(username+""+password+""+file);
 window.location.href="SignIn.html";
+
+
 }
+
+function handleImage(e){
+    console.log(e);
+    
+    //target the image 
+    const img = e.target.files[0];
+    console.log(img);
+
+    //read the image
+    const fileReader = new FileReader();
+
+    //get the image url
+    fileReader.readAsDataURL(img);
+    fileReader.onloadend = (e) => {
+        console.log(e);
+
+        //get the image url
+    const src = e.target.result;
+    console.log(src);
+
+    // display image via id
+    document.getElementById('img').src = src;
+    console.log(document.getElementById('img'));
+
+    //save the image in the local storage
+    localStorage.setItem('image',src);
+        console.log('from storage:', localStorage.getItem('image'));
+        document.getElementById('img').src = localStorage.getItem('image');
+
+
+    }
+    
+
+
+}
+document.querySelector('#SignUp').onchange = (event) => handleImage(event);
+
     </script>
 </html>
